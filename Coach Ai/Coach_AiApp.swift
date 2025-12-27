@@ -6,12 +6,23 @@
 //
 
 import SwiftUI
+import FirebaseCore
 
 @main
 struct Coach_AiApp: App {
+    @StateObject private var firebase = FirebaseService.shared
+    
+    init() {
+        FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if firebase.isAuthenticated {
+                ContentView()
+            } else {
+                SignInView()
+            }
         }
     }
 }

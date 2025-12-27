@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CD238FA02EFE3AA000517279 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CD238F9F2EFE3AA000517279 /* FirebaseAuth */; };
+		CD238FA22EFE3AA000517279 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = CD238FA12EFE3AA000517279 /* FirebaseCore */; };
+		CD238FA42EFE3AA000517279 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CD238FA32EFE3AA000517279 /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		CD0D953C2EBBB3F200489404 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD238FA22EFE3AA000517279 /* FirebaseCore in Frameworks */,
+				CD238FA02EFE3AA000517279 /* FirebaseAuth in Frameworks */,
+				CD238FA42EFE3AA000517279 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +121,9 @@
 			);
 			name = "Coach Ai";
 			packageProductDependencies = (
+				CD238F9F2EFE3AA000517279 /* FirebaseAuth */,
+				CD238FA12EFE3AA000517279 /* FirebaseCore */,
+				CD238FA32EFE3AA000517279 /* FirebaseFirestore */,
 			);
 			productName = "Coach Ai";
 			productReference = CD0D952E2EBBB3F100489404 /* Coach Ai.app */;
@@ -195,6 +207,9 @@
 			);
 			mainGroup = CD0D95252EBBB3F100489404;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CD238F9E2EFE3AA000517279 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CD0D952F2EBBB3F100489404 /* Products */;
 			projectDirPath = "";
@@ -395,22 +410,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Coach Ai/Coach Ai.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7YVZL5866V;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Coach Ai/App-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "DeltaraTech.Coach-Ai";
+				PRODUCT_BUNDLE_IDENTIFIER = DeltaraTech.CoachAi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -423,22 +435,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Coach Ai/Coach Ai.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7YVZL5866V;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Coach Ai/App-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "DeltaraTech.Coach-Ai";
+				PRODUCT_BUNDLE_IDENTIFIER = DeltaraTech.CoachAi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -558,6 +567,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CD238F9E2EFE3AA000517279 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CD238F9F2EFE3AA000517279 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD238F9E2EFE3AA000517279 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		CD238FA12EFE3AA000517279 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD238F9E2EFE3AA000517279 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		CD238FA32EFE3AA000517279 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD238F9E2EFE3AA000517279 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CD0D95262EBBB3F100489404 /* Project object */;
 }

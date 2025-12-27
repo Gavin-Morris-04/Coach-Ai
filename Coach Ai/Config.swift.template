@@ -1,0 +1,20 @@
+import Foundation
+
+/// Configuration file for API keys and sensitive data
+/// 
+/// IMPORTANT: 
+/// 1. Copy this file to Config.swift
+/// 2. Replace the placeholder values with your actual API keys
+/// 3. Never commit Config.swift to version control
+/// 4. Config.swift is already in .gitignore
+struct Config {
+    /// Groq API Key
+    /// Get your free key from: https://console.groq.com
+    static let groqAPIKey = "YOUR_GROQ_API_KEY_HERE"
+    
+    /// Firebase Configuration
+    /// The GoogleService-Info.plist file should be added to your project
+    /// but is excluded from version control
+    /// Download it from: https://console.firebase.google.com
+}
+

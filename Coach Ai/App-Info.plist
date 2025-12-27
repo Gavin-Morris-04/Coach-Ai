@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>$(DEVELOPMENT_LANGUAGE)</string>
+    <key>CFBundleDisplayName</key>
+    <string>Coach Ai</string>
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>$(PRODUCT_NAME)</string>
+    <key>CFBundlePackageType</key>
+    <string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+    <key>CFBundleShortVersionString</key>
+    <string>$(MARKETING_VERSION)</string>
+    <key>CFBundleVersion</key>
+    <string>$(CURRENT_PROJECT_VERSION)</string>
+    <key>LSRequiresIPhoneOS</key>
+    <true/>
+    <key>UIApplicationSceneManifest</key>
+    <dict>
+        <key>UIApplicationSupportsMultipleScenes</key>
+        <true/>
+    </dict>
+    <key>UIApplicationSupportsIndirectInputEvents</key>
+    <true/>
+    <key>UILaunchScreen</key>
+    <dict/>
+    <key>UIRequiredDeviceCapabilities</key>
+    <array>
+        <string>armv7</string>
+    </array>
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    <key>UISupportedInterfaceOrientations~ipad</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationPortraitUpsideDown</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Your location is used to detect when you arrive at your gym and to show your position on the map. For the FULL experience including automatic gym detection and workout tracking, please select "Always Allow" when prompted.</string>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>Always Allow location access enables the FULL experience: automatic gym detection, background workout tracking, and geofencing to prompt workouts near your gym even when the app is in the background. Please select "Always Allow" for the complete Coach Ai experience.</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>Always Allow location access enables the FULL experience: automatic gym detection, background workout tracking, and geofencing to prompt workouts near your gym even when the app is in the background. Please select "Always Allow" for the complete Coach Ai experience.</string>
+    <key>NSHealthShareUsageDescription</key>
+    <string>Coach reads your steps, active calories, heart rate, height, weight, and biological sex from Health to personalize coaching and track your fitness progress.</string>
+    <key>NSHealthUpdateUsageDescription</key>
+    <string>Coach may update your health data to track workouts and fitness goals.</string>
+    <key>NSCalendarsFullAccessUsageDescription</key>
+    <string>Calendar access lets you add and manage workout events.</string>
+    <key>NSUserTrackingUsageDescription</key>
+    <string>Not used for ads; required by iOS APIs in some configurations.</string>
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>location</string>
+    </array>
+</dict>
+</plist>
+
+
